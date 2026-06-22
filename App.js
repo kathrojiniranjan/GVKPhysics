@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from "react";
+import LectureListScreen from "./components/LectureListScreen";
+import PdfViewerScreen from "./components/PdfViewerScreen";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  // When a lecture is selected we show the PDF viewer; otherwise the list.
+  const [selectedLecture, setSelectedLecture] = useState(null);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (selectedLecture) {
+    return (
+      <PdfViewerScreen
+        lecture={selectedLecture}
+        onBack={() => setSelectedLecture(null)}
+      />
+    );
+  }
+
+  return <LectureListScreen onSelectLecture={setSelectedLecture} />;
+}

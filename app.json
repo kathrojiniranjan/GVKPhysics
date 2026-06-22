@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "GVKPhysics",
-    "slug": "GVKPhysics",
+    "name": "OGPhysics",
+    "slug": "OGPhysics",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +10,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ogphysics.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -19,6 +21,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "31116599-ff5a-4160-9a85-7a9823834502"
+      }
     }
   }
 }

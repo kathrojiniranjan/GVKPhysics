@@ -1,0 +1,22 @@
+{
+  "lectures": [
+    {
+      "id": "1",
+      "title": "Introduction to Mechanics",
+      "subject": "Unit 1 · Classical Mechanics",
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    },
+    {
+      "id": "2",
+      "title": "Newton's Laws of Motion",
+      "subject": "Unit 1 · Classical Mechanics",
+      "url": "https://drive.google.com/file/d/1aOHX2SAyiEdymQ1t04ZuanenfyZF51yH/view?usp=sharing"
+    },
+    {
+      "id": "3",
+      "title": "Work, Energy and Power",
+      "subject": "Unit 2 · Energy",
+      "url": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+    }
+  ]
+}
